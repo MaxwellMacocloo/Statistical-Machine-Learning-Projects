@@ -72,9 +72,9 @@ This project has two parts:
 - **The robust distance flags too many parts at this dimensionality.** With 88 variables and 902 parts, even the more accurate Green–Martin cut-off flags many parts. The distance is still useful for *ranking*, and it put 619 at the very top.
 - **Part 303 deserves a look.** All three methods flagged it, so it may be a third defect or a measurement problem.
 
-## Notes on the Original Analysis
+## Notes 
 
-- The section heading mentions a one-class SVM, but no one-class SVM was fitted. The comparison covers MCD, LOF and Isolation Forest only.
+-  The comparison covers MCD, LOF and Isolation Forest only.
 
 ## Tools
 
