@@ -1,6 +1,6 @@
 # Statistical Machine Learning Projects
 
-Eight applied machine-learning projects in **R**, covering regression, classification, unsupervised learning and anomaly detection on real-world data from medicine, e-commerce, HR, meteorology, text and manufacturing.
+Seven applied machine-learning projects in **R**, covering regression, classification, unsupervised learning and anomaly detection on real-world data from medicine, e-commerce, HR, meteorology, text and manufacturing.
 
 Each folder has a full project report: problem, data, method, results tables, findings and an honest review of limitations. **The reports describe the analysis, not the code.**
 
