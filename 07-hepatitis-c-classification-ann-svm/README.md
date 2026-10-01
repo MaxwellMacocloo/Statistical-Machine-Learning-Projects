@@ -97,13 +97,6 @@ Each additional unit of AST raises the odds of disease by about 6%. Higher chole
 - **Bigger networks were not reliably better.** ANN (7, 4) beat the single-layer net, but ANN (3, 4) was the weakest network. With 615 rows and 75 positives, architecture choices are noisy.
 - **AST is the key liver-damage marker** in every analysis: correlation, odds ratios, Random Forest and MARS.
 
-## Notes on the Original Analysis
-
-- **The comparison table was corrected.** In the original table, the misclassification values for the ANN and SVM rows were listed in a different order from the row labels, so each ANN row showed an SVM figure and vice versa. The table above pairs each value with its own model.
-- **The MARS misclassification rate (0.177 in the original) is invalid.** Inside the MARS loop it was computed from the Random Forest's predictions by mistake. On the one fold where MARS's own predictions were scored, its misclassification was 0.055.
-- **SVM AUCs are understated.** They were computed from predicted class labels (0/1) instead of predicted probabilities. Refitting the SVMs with probability output would give a fair AUC.
-- **About class imbalance:** 87.8% of subjects are healthy, so a model that always predicts "healthy" scores 12.2% misclassification. All models beat this baseline comfortably. Even so, sensitivity on the 75 positive cases is the clinically important figure, and it should be reported.
-- The neural network folds were assigned randomly, while the other models used stratified folds. The fold-to-fold variation (for example AUC 0.81–1.00) is large given only about 7 positives per fold.
 
 ## Tools
 
