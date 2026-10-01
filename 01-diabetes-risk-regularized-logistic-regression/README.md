@@ -69,10 +69,7 @@ In the 13-variable MCP/LASSO refit, only 7 terms were significant at 5%: Gender,
 - **Gender effect.** Male patients have much lower odds of a positive result *in this sample*. This most likely reflects how the hospital population was sampled, not a general biological effect, and should be read with care.
 - **SCAD's sparsity is useful here.** SCAD and MCP are non-convex penalties built to shrink large coefficients less than LASSO does. Here SCAD produced the sparsest model, while MCP and LASSO converged to the same 13-variable solution.
 
-## Notes on the Original Analysis
-
-- The original write-up gave the SCAD refit's AIC as 140.22, but the model output shows **154.26**. The table above uses the output value. With that value, SCAD has a *higher* AIC than MCP/LASSO (146.42). It is still the preferred model, because its test AUC is equal and it uses 8 fewer predictors.
-- The *p*-values come from refitting an unpenalized model after selection. Post-selection *p*-values are optimistic, so they should be read as descriptive.
+## Notes
 - Performance rests on a single train/test split. Repeated cross-validation would give a steadier estimate, and reporting sensitivity and specificity at a chosen cut-off would make the result clinically more useful.
 
 ## Tools
