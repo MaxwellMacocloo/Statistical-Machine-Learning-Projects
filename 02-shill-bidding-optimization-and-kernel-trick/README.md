@@ -84,11 +84,6 @@ Accuracy climbs sharply from degree 1 (77.3%) to degree 4 (95.3%), then slowly f
 - **Optimizer choice matters.** BFGS converged cleanly, while CG stopped at a worse point without converging. With ill-conditioned problems like this one (the intercept is near −10.6), quasi-Newton methods are the safer default.
 - **A plain kernel rule comes close to logistic regression.** A classifier with no fitted weights, just averaged kernel similarities, reached about 96% test accuracy once the kernel degree was tuned. The linear version reached only 77%, which shows how much a non-linear feature map adds.
 
-## Notes on the Original Analysis
-
-- **Baseline:** 89% of records are normal, so a model that always predicts "normal" already scores 89% accuracy. Sensitivity (94.6% for the logistic model) is the more informative number.
-- The original write-up listed *early bidding* as significant. The output shows **winning ratio** is significant and early bidding is not (*p* = 0.11). The table above follows the output.
-- **The kernel classifier's test accuracy is optimistic.** In the degree-tuning step, and again in the final test, each class's average similarity was computed from the same data being scored, using that data's true labels. A clean estimate would compute those averages from training data only. The 96.5% figure should be treated as an upper bound.
 
 ## Tools
 
