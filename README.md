@@ -31,9 +31,9 @@ Each folder has a full project report: problem, data, method, results tables, fi
 
 Across these projects, a few themes came up again and again:
 
-1. **Simpler models often tie complex ones.** A 5-variable model matched a 13-variable one (01), and a 2-parameter curve beat a 5-df spline (05).
+1. **Simpler models often tie complex ones.** A 5-variable model matched a 13-variable one (01).
 2. **When a linear model loses, it is usually from missing non-linearity rather than overfitting.** Regularization barely moved the error, while trees, GAMs and MARS improved it sharply (06, 08).
-3. **The evaluation pipeline matters as much as the model.** Several "Notes on the Original Analysis" sections point out where test data leaked into training or scoring. Fixing that changes which model wins (05).
+3. **The evaluation pipeline matters as much as the model.** .
 
 ## Author
 
