@@ -88,7 +88,7 @@ Department, salary, work accident and promotion add comparatively little once th
 - **High performers leave too.** The positive effect of last evaluation suggests the company loses strong employees, not just weak ones. This is a retention risk worth flagging to HR.
 - **Practical levers:** satisfaction, sensible workload (about 3–5 projects), promotion paths and pay. Each has a large, consistent effect.
 
-## Notes on the Original Analysis
+## Notes 
 
 - The "LASSO" row in the comparison is the AUC of a standard logistic regression on all predictors. LASSO was used to choose and justify the variables, not to produce the final predictions.
 - The models were compared on a single split. With 15,000 rows the estimates are fairly stable, but repeated cross-validation would also give confidence intervals for the Random Forest.
