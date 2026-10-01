@@ -104,9 +104,7 @@ This project has two unsupervised-learning studies:
 - **The highest-lift rule is a prophetic formula.** {lord, thus} ⇒ {saith} reflects the stock phrase *"Thus saith the LORD"*. Its lift of 22.5 means the pattern occurs 22 times more often than chance.
 - **Conviction picks out the truly deterministic rules.** It separates the rules that essentially never fail from rules that are merely frequent.
 
-## Notes on the Original Analysis
-
-- The original text said "the last 30 PCs" explain 90% of variance. The output shows the **first 32** components are needed to reach 90%. The table above follows the output.
+## Notes 
 - The test set was standardized with its own mean and SD. Strictly, the training-set statistics should be reused, so both sets sit on the same scale.
 
 ## Tools
