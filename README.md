@@ -33,7 +33,7 @@ Across these projects, a few themes came up again and again:
 
 1. **Simpler models often tie complex ones.** A 5-variable model matched a 13-variable one (01).
 2. **When a linear model loses, it is usually from missing non-linearity rather than overfitting.** Regularization barely moved the error, while trees, GAMs and MARS improved it sharply (06, 08).
-3. **The evaluation pipeline matters as much as the model.** .
+3. **The evaluation pipeline matters as much as the model.** 
 
 ## Author
 
